@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Curosel() {
     return (
         <>
-            <div class="h-max bg-no-repeat bg-center bg-cover bg-[url('/pex.jpg')]">
+            <div class="h-96 bg-no-repeat bg-center bg-cover bg-[url('/maincontent.jpg')]">
                 
             </div>
         </>
