@@ -18,7 +18,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <Trending />
+      
     </div>
     </>
   ) 

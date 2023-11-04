@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NewRelease = () => {
+const Retro = () => {
     const trendingData = [
         {
             name: 'Pathan',
@@ -21,8 +21,10 @@ const NewRelease = () => {
     ];
     return (
         <>
+
+
             <h1 className='bg-black text-white p-10 text-4xl font-bold'>
-                NewRelease
+                Retro
             </h1>
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
@@ -41,7 +43,7 @@ const NewRelease = () => {
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
                     </div>
-                   
+                
                 </div>
                 <div class="grid gap-4">
                     <div>
@@ -50,7 +52,7 @@ const NewRelease = () => {
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
                     </div>
-                   
+            
                 </div>
                 <div class="grid gap-4">
                     <div>
@@ -59,11 +61,11 @@ const NewRelease = () => {
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
                     </div>
-                   
+                  
                 </div>
             </div>
         </>
     )
 }
 
-export default NewRelease
+export default Retro
