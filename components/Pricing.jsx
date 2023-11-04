@@ -3,10 +3,11 @@ import React from 'react'
 const Pricing = ({pricing}) => {
   return (
     <>
-    <section class="text-gray-400 bg-black body-font overflow-hidden">
+    <section class="text-gray-400 bg-black body-font overflow-hidden p-10 ">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">Pricing</h1>
+      <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5"></div>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
       
     </div>
