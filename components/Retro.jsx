@@ -29,39 +29,39 @@ const Retro = () => {
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./one.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./two.jpg" alt="" />
                     </div>
-                  
+
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./three.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./four.jpg" alt="" />
                     </div>
-                
+
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./five.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./six.jpg" alt="" />
                     </div>
-            
+
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./seven.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="eight.jpg" alt="" />
                     </div>
-                  
+
                 </div>
             </div>
         </>

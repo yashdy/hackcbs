@@ -3,9 +3,9 @@ import React from 'react'
 const Testimonal = () => {
   return (
     <>
-    <section class="text-gray-400 bg-black body-font">
+    <section class="text-gray-400 bg-black body-font p-10">
   <div class="container px-5 py-24 mx-auto">
-    <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Some Reviews</h1>
+    <h1 class="text-5xl font-medium title-font text-white mb-12 text-center">Some Reviews</h1>
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/2 w-full">
         <div class="h-full bg-black bg-opacity-40 p-8 rounded">
