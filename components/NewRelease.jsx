@@ -27,34 +27,34 @@ const NewRelease = () => {
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./one.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./nine.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./two.jpg" alt="" />
-                    </div>
-
-                </div>
-                <div class="grid gap-4">
-                    <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./three.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./four.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./ten.jpeg" alt="" />
                     </div>
 
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./five.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./eleven.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./six.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./twelve.jpeg" alt="" />
                     </div>
 
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./seven.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./thirteen.jpeg" alt="" />
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="./fourteen.jpg" alt="" />
+                    </div>
+
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg" src="./fifteen.jpeg" alt="" />
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="eight.jpg" alt="" />

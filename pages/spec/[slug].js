@@ -5,9 +5,9 @@ import Testimonal from '../../components/Testimonal';
 const Spec = ({ slug, img, name, pricing , description}) => {
     return (
         <>
-            <section class="p-5 text-gray-400 bg-black body-font">
+            <section class="p-10 text-gray-400 bg-black body-font">
                 <h1 className='flex justify-center text-5xl font-bold text-white p-5 mt-10'>Explore, Review, and Purchase</h1>
-              
+                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5"></div>
                 <section class="text-gray-600 body-font overflow-hidden">
                     <div class="container px-5 py-24 mx-auto">
                         <div class="lg:w-4/5 mx-auto flex flex-wrap">
@@ -37,9 +37,7 @@ const Spec = ({ slug, img, name, pricing , description}) => {
                                 
                                 </div>
                                 <p class="leading-relaxed text-lg text-white">{description}</p>
-                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                                    
-                                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">     
                                 </div>
                                 <div class="flex">
                                     <span class="title-font font-medium text-2xl text-gray-500">$58.00</span>
@@ -73,7 +71,12 @@ export async function getServerSideProps(context) {
             pricing = "100"
             description='"The Guilty" is a tense and gripping thriller film directed by Antoine Fuqua. It follows a 911 dispatcher, played by Jake Gyllenhaal, who becomes deeply involved in a high-stakes rescue operation when he receives a call from a kidnapped woman'
     }
-
+    else if(slug == "Dontlookup"){
+        name = "Don't Look Up",
+        img="/two.jpg",
+        pricing = "100",
+        description = '"Dont Look Up" is a satirical dark comedy film directed by Adam McKay. It follows two astronomers, played by Leonardo DiCaprio and Jennifer Lawrence, who discover a planet-killing comet headed for Earth.'
+    }
     else {
         name = "No Such Content Found";
     }

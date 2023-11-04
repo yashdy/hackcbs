@@ -1,4 +1,4 @@
-import React,{useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useUSDCPay } from '../hooks/PayUSDC';
 import { PublicKey } from '@solana/web3.js';
 import { useCashApp } from '../hooks/Pay';
@@ -59,28 +59,28 @@ const Pricing = ({ pricing }) => {
                   </span>Full Access
                 </p>
 
-                <button onClick={()=> pay()} class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 my-5 w-full focus:outline-none hover:bg-gray-700 rounded">Buy Now
+                <button onClick={() => pay()} class="flex items-center mt-auto text-white bg-gray-800 border-0 py-2 px-4 my-5 w-full focus:outline-none hover:bg-gray-700 rounded">Buy Now
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </button>
                 <button class="mt-5 flex items-center text-white bg-gray-800 border-0 py-2 px-4 my-5 w-full focus:outline-none hover:bg-gray-700 rounded">Buy with QR
-                <div class="ml-10  flex w-1/3 text-2xl items-center justify-center px-4 py-2 space-x-2 border border-gray-800 rounded-md text-gray-800">
-                              {/* <Action setModalOpen={setNewTransactionModalOpen} /> */}
+                  <div class="ml-10 flex w-1/3 text-2xl items-center justify-center px-4 py-2 space-x-2 border border-gray-800 rounded-md text-gray-800">
+                    {/* <Action setModalOpen={setNewTransactionModalOpen} /> */}
 
-                              <GenQR
-                                setModalOpen={setTransactionQRModalOpen}
-                                userAddress={userAddress}
-                                setQrCode={setQrCode}
-                              />
-                              <TransactionQRModal
-                                modalOpen={transactionQRModalOpen}
-                                setModalOpen={setTransactionQRModalOpen}
-                                userAddress={toPubkey}
-                                myKey={publicKey}
-                                setQrCode={setQrCode}
-                              />
-                            </div>
+                    <GenQR
+                      setModalOpen={setTransactionQRModalOpen}
+                      userAddress={userAddress}
+                      setQrCode={setQrCode}
+                    />
+                    <TransactionQRModal
+                      modalOpen={transactionQRModalOpen}
+                      setModalOpen={setTransactionQRModalOpen}
+                      userAddress={toPubkey}
+                      myKey={publicKey}
+                      setQrCode={setQrCode}
+                    />
+                  </div>
                 </button>
                 <p class="text-xs text-gray-400 mt-3">Literally you probably haven't heard of them jean shorts.</p>
               </div>
