@@ -22,8 +22,9 @@ const NewRelease = () => {
     return (
         <>
             <h1 className='bg-black text-white p-10 text-4xl font-bold'>
-                NewRelease
+                Newly Added
             </h1>
+
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
                     <div>
@@ -39,7 +40,7 @@ const NewRelease = () => {
                         <img class="h-auto max-w-full rounded-lg" src="./eleven.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./twelve.jpeg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./eight.jpg" alt="" />
                     </div>
 
                 </div>
@@ -57,7 +58,7 @@ const NewRelease = () => {
                         <img class="h-auto max-w-full rounded-lg" src="./fifteen.jpeg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="eight.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="sixteen.jpg" alt="" />
                     </div>
 
                 </div>

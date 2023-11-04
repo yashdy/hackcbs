@@ -24,7 +24,7 @@ const Retro = () => {
 
 
             <h1 className='bg-black text-white p-10 text-4xl font-bold'>
-                Retro
+                Award-Winning 
             </h1>
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
@@ -59,7 +59,7 @@ const Retro = () => {
                         <img class="h-auto max-w-full rounded-lg" src="./seven.jpg" alt="" />
                     </div>
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="eight.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="twelve.jpeg" alt="" />
                     </div>
 
                 </div>
