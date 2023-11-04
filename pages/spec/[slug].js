@@ -1,10 +1,12 @@
 import React from 'react'
 import Pricing from '../../components/Pricing';
+import Testimonal from '../../components/Testimonal';
 
 const Spec = ({ slug, img, name , pricing }) => {
     return (
         <>
             <section class="p-5 text-gray-400 bg-black body-font">
+                <h1 className='flex justify-center text-5xl font-bold text-white p-5 mt-10'>Explore, Review, and Purchase: Everything You Need to Know About {name}</h1>
                 <div class="container px-5 py-24 mx-auto flex flex-wrap">
                     <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
                         <div class="w-full sm:p-4 px-4 mb-6">
@@ -33,6 +35,7 @@ const Spec = ({ slug, img, name , pricing }) => {
                     </div>
                 </div>
             </section>
+            <Testimonal/>
             <Pricing pricing={pricing}/>
         </>
     )
