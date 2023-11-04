@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useRouter } from 'next/router';
 const Trending = () => {
+    const router = useRouter()
     const trendingData = [
         {
             name: 'Pathan',
@@ -30,7 +31,7 @@ const Trending = () => {
 
             <div class="bg-black grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">
-                    <div>
+                    <div className="cursor-pointer" onClick={()=>router.push("/spec/TheGuilty")}>
                         <img class="h-auto max-w-full rounded-lg" src="./one.jpg" alt="" />
                     </div>
                     <div>

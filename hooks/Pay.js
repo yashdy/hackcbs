@@ -11,7 +11,7 @@ export const useCashApp = () => {
     const [userAddress, setUserAddress] = useState("11111111111111111111111111111111")
     const [avatar, setAvatar] = useState("")
     const {connection} = useConnection()
-    const [amount,setAmount] = useState(0.25)
+    const [amount,setAmount] = useState(20)
     const [receiver, setReceiver] = useState('')
     const [transactionPurpose, setTransactionPurpose] = useState('')
     const [newTransactionModalOpen, setNewTransactionModalOpen] = useState(false)
