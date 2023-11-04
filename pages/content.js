@@ -8,7 +8,6 @@ const content = () => {
   return (
     <>
     <GallerySlider/>
-    <GallerySlider/>
     <Trending/>
     <NewRelease/>
     <Retro/>
