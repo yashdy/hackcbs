@@ -38,7 +38,7 @@ const Retro = () => {
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./three.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./everythingonce.jpg" alt="" />
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="./four.jpg" alt="" />
@@ -56,7 +56,7 @@ const Retro = () => {
                 </div>
                 <div class="grid gap-4">
                     <div>
-                        <img class="h-auto max-w-full rounded-lg" src="./seven.jpg" alt="" />
+                        <img class="h-auto max-w-full rounded-lg" src="./socialnetwork.jpg" alt="" />
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded-lg" src="twelve.jpeg" alt="" />
