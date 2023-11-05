@@ -21,7 +21,7 @@ const TransactionQRModal = ({
   userAddress,
   setQrCode,
 }) => {
-  const [payam, setpayam] = useState(new BigNumber("25"));
+  const [payam, setpayam] = useState(new BigNumber("20"));
   const { transactions, setTransactions } = useCashApp();
   const qrRef = useRef();
   const { connection } = useConnection();
