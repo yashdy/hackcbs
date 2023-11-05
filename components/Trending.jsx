@@ -34,7 +34,7 @@ const Trending = () => {
                     <div className="cursor-pointer" onClick={()=>router.push("/spec/TheGuilty")}>
                         <img class="h-auto max-w-full rounded-lg" src="./one.jpg" alt="" />
                     </div>
-                    <div>
+                    <div className="cursor-pointer" onClick={()=>router.push("/spec/Dontlookup")}>
                         <img class="h-auto max-w-full rounded-lg" src="./two.jpg" alt="" />
                     </div>
 

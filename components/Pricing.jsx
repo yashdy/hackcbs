@@ -6,8 +6,34 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import GenQR from './transaction/GenQR';
 import TransactionQRModal from './transaction/TransactionQRModal';
 import { Dropdown } from "flowbite-react";
-
+import wallet from '../wallet/wallet';
+import * as bs58 from "bs58";
+import {
+  Commitment,
+  Connection,
+  Keypair,
+  LAMPORTS_PER_SOL,
+  PublicKey,
+} from "@solana/web3.js";
+//import wallet from "../wba-wallet.json"
+import {
+  getOrCreateAssociatedTokenAccount,
+  transfer,
+  getAccount,
+  mintTo,
+} from "@solana/spl-token";
 const Pricing = ({ pricing }) => {
+  //
+  const keypair = Keypair.fromSecretKey(bs58.decode(wallet));
+  const commitment = "confirmed";
+  const connection = new Connection("https://api.devnet.solana.com", commitment);
+
+  const mint = new PublicKey("Go1cRvBxpUiwfig4ShR7XWC3C9g3GbZYfFeUN2jLYgQF");
+
+  // Recipient address
+  const to = new PublicKey("44n5CYX18L6p4VxVECE9ZNYrAGB9GKD477b78kPNq5Su");
+
+  //
   const [transactionQRModalOpen, setTransactionQRModalOpen] = useState(false);
   const [qrCode, setQrCode] = useState(false);
   const { connected, userPublickey } = useWallet();
@@ -29,7 +55,32 @@ const Pricing = ({ pricing }) => {
   const pay = () => {
     const txResponce = createTransaction(userPubkey, toPubkey, amount);
     const txData = txResponce;
+    setTimeout(()=>{
+      transferNFT()
+    },[3000])
   };
+
+  const transferNFT = async () => {
+    const form = new PublicKey("9ZyYXZa5rh7xxM4H4ZBxRQh8ruY5ZhWpSvd6rBZ82eK2")
+
+    const to_account = await getOrCreateAssociatedTokenAccount(
+      connection,
+      keypair,
+      mint,
+      to
+    );
+
+    const txhash = transfer(
+      connection,
+      keypair,
+      form,
+      to_account.address,
+      keypair.publicKey,
+      1
+    );
+
+    console.log("Success ! Check", txhash);
+  }
   return (
     <>
       <section class="text-gray-400 bg-black body-font overflow-hidden">
@@ -44,8 +95,8 @@ const Pricing = ({ pricing }) => {
               <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
                 <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">BUY</h2>
                 <h1 class="text-5xl text-white pb-4 mb-4 border-b border-gray-800 leading-none">{pricing} USDC</h1>
-                
-                <p class="flex items-center text-gray-400 mb-2">  
+
+                <p class="flex items-center text-gray-400 mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                       <path d="M20 6L9 17l-5-5"></path>
@@ -53,7 +104,7 @@ const Pricing = ({ pricing }) => {
                   </span>Full Access
                 </p>
 
-                <p class="flex items-center text-gray-400 mb-2">  
+                <p class="flex items-center text-gray-400 mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                       <path d="M20 6L9 17l-5-5"></path>
